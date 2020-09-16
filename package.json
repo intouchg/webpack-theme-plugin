@@ -1,0 +1,29 @@
+{
+    "name": "@i/webpack-theme-plugin",
+    "version": "0.0.7",
+    "description": "Webpack plugin to run the Intouch Design System theme processor @i/theme",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "repository": "https://intazdoweb.intouchsol.com/IntouchDesignSystem/IntouchDesignSystem/_git/webpack-theme-plugin",
+    "author": "Intouch Group",
+    "license": "UNLICENSED",
+    "scripts": {
+      "build": "rimraf dist && tsc",
+      "prepare": "npm run build",
+      "typecheck": "tsc --noEmit --strict",
+      "test": "echo tests are missing"
+    },
+    "dependencies": {
+      "@i/theme": "latest",
+      "@i/utility": "latest"
+    },
+    "devDependencies": {
+      "@types/webpack": "4.41.21",
+      "rimraf": "3.0.2",
+      "typescript": "3.9.7"
+    },
+    "peerDependencies": {
+      "webpack": "^4.44.1"
+    }
+  }
+  
