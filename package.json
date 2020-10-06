@@ -1,6 +1,6 @@
 {
     "name": "@i/webpack-theme-plugin",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Webpack plugin to run the Intouch Design System theme processor @i/theme",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

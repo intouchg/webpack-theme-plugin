@@ -16,6 +16,7 @@ class IntouchThemePlugin {
 		VALUES: 'Missing "VALUES" config option',
 		GROUPS: 'Missing "GROUPS" config option',
 		COMPONENTS: 'Missing "COMPONENTS" config option',
+		VARIANTS: 'Missing "VARIANTS" config option',
 		SNIPPETS: 'Missing "SNIPPETS" config option',
 	}
 

@@ -23,6 +23,7 @@ webpackPlugins.push(new IntouchThemePlugin())
 VALUES=theme/values.json
 GROUPS=theme/groups.json
 COMPONENTS=theme/components.json
+VARIANTS=theme/variants.json
 SNIPPETS=theme/snippets.json
 THEME_OUTPUT=theme/theme.js
 ```
