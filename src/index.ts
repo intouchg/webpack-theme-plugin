@@ -31,25 +31,25 @@ class IntouchThemePlugin {
 		this.themeFileBuffers = {}
 		this.themeJSONData = {}
 
-		this.validateThemeFilepath('values', 'themeValuesPath')
-		this.validateThemeFilepath('components', 'themeComponentsPath')
-		this.validateThemeFilepath('variants', 'themeVariantsPath')
+		this.validateThemeFilepath('values')
+		this.validateThemeFilepath('components')
+		this.validateThemeFilepath('variants')
 
 		this.outputPath = path.resolve('.', this.themeConfig.themeOutputPath)
 
 		this.writeThemeJS = this.writeThemeJS.bind(this)
 	}
 
-	validateThemeFilepath (key: string, configPropertyName: keyof Config) {
+	validateThemeFilepath (configPropertyName: keyof Config) {
 		const filepath = path.resolve('.', this.themeConfig[configPropertyName])
 
 		if (!fs.existsSync(filepath)) {
 			throw new Error(`Could not locate file referenced by property "${configPropertyName}" in ${configFilename} config file.\n Referenced "${configPropertyName}" filepath: ${filepath}\n Config file filepath: ${this.configPath}`)
 		}
 
-		this.themeFilepaths[key] = filepath
-		this.themeFileBuffers[key] = Buffer.from('')
-		this.themeJSONData[key] = {}
+		this.themeFilepaths[configPropertyName] = filepath
+		this.themeFileBuffers[configPropertyName] = Buffer.from('')
+		this.themeJSONData[configPropertyName] = {}
 	}
 
 	async writeThemeJS () {
