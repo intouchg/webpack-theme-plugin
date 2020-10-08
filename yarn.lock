@@ -10,9 +10,9 @@
     regenerator-runtime "^0.13.4"
 
 "@i/theme@latest":
-  version "0.0.9"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.9.tgz#d40832f64074919afd646ac970a0205741d4592e"
-  integrity sha1-1Agy9kB0kZr9ZGrJcKAgV0HUWS4=
+  version "0.0.14"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.14.tgz#4c1be9de60f00029ba17073c2b49615463ba3856"
+  integrity sha1-TBvp3mDwACm6Fwc8K0lhVGO6OFY=
   dependencies:
     "@babel/runtime" "7.11.2"
     "@i/utility" latest
@@ -30,9 +30,9 @@
   integrity sha512-/+CRPXpBDpo2RK9C68N3b2cOvO0Cf5B9aPijHsoDQTHivnGSObdOF2BRQOYjojWTDy6nQvMjmqRXIxH55VjxxA==
 
 "@types/node@*":
-  version "14.11.4"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/node/-/node-14.11.4.tgz#bf6ea3d5f7b1504232b11acbc40e1ac4c750d3b9"
-  integrity sha1-v26j1fexUEIysRrLxA4axMdQ07k=
+  version "14.11.5"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/node/-/node-14.11.5.tgz#fecad41c041cae7f2404ad4b2d0742fdb628b305"
+  integrity sha1-/srUHAQcrn8kBK1LLQdC/bYoswU=
 
 "@types/source-list-map@*":
   version "0.1.2"

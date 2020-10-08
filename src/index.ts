@@ -1,75 +1,55 @@
 import fs from 'fs'
 import path from 'path'
-import { parseEnv } from '@i/utility'
-import { IDSCONFIG_FILENAME, themeProcessor } from '@i/theme'
+import { configFilename, validateConfig, themeProcessor } from '@i/theme'
 import type { Compiler } from 'webpack'
+import type { Config } from '@i/theme'
 
 class IntouchThemePlugin {
-	configPath: string | null
-	themeConfig: { [key: string]: string } | null
+	configPath: string
+	themeConfig: Required<Config>
 	themeFilepaths: { [key: string]: string }
-	outputPath: string | null
+	outputPath: string
 	themeFileBuffers: { [key: string]: Buffer }
 	themeJSONData: { [key: string]: any }
 
-	static THEME_VALUES_VALIDATION: { [key: string]: string } = {
-		VALUES: 'Missing "VALUES" config option',
-		GROUPS: 'Missing "GROUPS" config option',
-		COMPONENTS: 'Missing "COMPONENTS" config option',
-		VARIANTS: 'Missing "VARIANTS" config option',
-		SNIPPETS: 'Missing "SNIPPETS" config option',
-	}
-
-	static THEME_CONFIG_VALIDATION: { [key: string]: string } = {
-		THEME_OUTPUT: 'Missing "THEME_OUTPUT" config option',
-	}
-
-	static IDSCONFIG_VALIDATION: { [key: string]: string } = {
-		...IntouchThemePlugin.THEME_VALUES_VALIDATION,
-		...IntouchThemePlugin.THEME_CONFIG_VALIDATION,
-	}
-
 	constructor () {
-		const configPath = path.resolve('.', IDSCONFIG_FILENAME)
+		const configPath = path.resolve('.', configFilename)
 
-		if (fs.existsSync(configPath)) {
-			this.configPath = configPath
-		}
-		else {
-			throw new Error(`No .idsconfig file was found at filepath: ${configPath}`)
+		if (!fs.existsSync(configPath)) {
+			throw new Error(`No ${configFilename} config file was found at filepath: ${configPath}`)
 		}
 
-		const configData = fs.readFileSync(this.configPath).toString('utf-8')
-		this.themeConfig = parseEnv(configData)
+		this.configPath = configPath
+		const config = validateConfig(require(this.configPath))
 
-		// Validate .idsconfig file
-		for (const key in IntouchThemePlugin.IDSCONFIG_VALIDATION) {
-			if (!this.themeConfig.hasOwnProperty(key)) {
-				throw new Error(`The .idsconfig file is not valid: ${IntouchThemePlugin.IDSCONFIG_VALIDATION[key]}`)
-			}
+		if (!config) {
+			throw new Error(`The ${configFilename} config file is invalid at filepath: ${this.configPath}`)
 		}
 
+		this.themeConfig = config
 		this.themeFilepaths = {}
 		this.themeFileBuffers = {}
 		this.themeJSONData = {}
 
-		// Validate existence of each theme values file referenced in .idsconfig and initialize themeData
-		Object.keys(IntouchThemePlugin.THEME_VALUES_VALIDATION).forEach((key) => {
-			const lowercaseKey = key.toLowerCase()
-			const filepath = path.resolve('.', this.themeConfig![key])
+		this.validateThemeFilepath('themeValuesPath')
+		this.validateThemeFilepath('themeComponentsPath')
+		this.validateThemeFilepath('themeVariantsPath')
 
-			if (!fs.existsSync(filepath)) {
-				throw new Error(`Could not locate theme ${key.toLowerCase()} JSON file at filepath specified in .idsconfig: ${filepath}`)
-			}
-
-			this.themeFilepaths[lowercaseKey] = filepath
-			this.themeFileBuffers[lowercaseKey] = Buffer.from('')
-			this.themeJSONData[lowercaseKey] = {}
-		})
-
-		this.outputPath = path.resolve('.', this.themeConfig['THEME_OUTPUT'])
+		this.outputPath = path.resolve('.', this.themeConfig.themeOutputPath)
 
 		this.writeThemeJS = this.writeThemeJS.bind(this)
+	}
+
+	validateThemeFilepath (configPropertyName: keyof Config) {
+		const filepath = path.resolve('.', this.themeConfig[configPropertyName])
+
+		if (!fs.existsSync(filepath)) {
+			throw new Error(`Could not locate file referenced by property "${configPropertyName}" in ${configFilename} config file.\n Property "${configPropertyName}" filepath: ${filepath}\n Config file filepath: ${this.configPath}`)
+		}
+
+		this.themeFilepaths[configPropertyName] = filepath
+		this.themeFileBuffers[configPropertyName] = Buffer.from('')
+		this.themeJSONData[configPropertyName] = {}
 	}
 
 	async writeThemeJS () {
@@ -88,7 +68,7 @@ class IntouchThemePlugin {
 			const theme = themeProcessor(this.themeJSONData as any)
 
 			fs.writeFileSync(
-				this.outputPath!,
+				this.outputPath,
 				`export default ${JSON.stringify(theme, null, '\t')}`,
 			)
 		}
@@ -97,7 +77,7 @@ class IntouchThemePlugin {
 	watchThemeFiles () {
 		let changeTimeoutId: ReturnType<typeof setTimeout> | null = null
 
-		Object.entries(this.themeFilepaths).forEach(([ key, filepath ]) => {
+		Object.values(this.themeFilepaths).forEach((filepath) => {
 			fs.watch(filepath, 'utf-8', () => {
 				if (changeTimeoutId) {
 					clearTimeout(changeTimeoutId)
@@ -105,8 +85,6 @@ class IntouchThemePlugin {
 				changeTimeoutId = setTimeout(this.writeThemeJS, 1)
 			})
 		})
-
-
 	}
 
 	// This function is called by Webpack one time when the plugin is initialized
