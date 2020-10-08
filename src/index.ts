@@ -31,25 +31,25 @@ class IntouchThemePlugin {
 		this.themeFileBuffers = {}
 		this.themeJSONData = {}
 
-		this.validateThemeFilepath('themeValuesPath')
-		this.validateThemeFilepath('themeComponentsPath')
-		this.validateThemeFilepath('themeVariantsPath')
+		this.validateThemeFilepath('values', 'themeValuesPath')
+		this.validateThemeFilepath('components', 'themeComponentsPath')
+		this.validateThemeFilepath('variants', 'themeVariantsPath')
 
 		this.outputPath = path.resolve('.', this.themeConfig.themeOutputPath)
 
 		this.writeThemeJS = this.writeThemeJS.bind(this)
 	}
 
-	validateThemeFilepath (configPropertyName: keyof Config) {
+	validateThemeFilepath (key: string, configPropertyName: keyof Config) {
 		const filepath = path.resolve('.', this.themeConfig[configPropertyName])
 
 		if (!fs.existsSync(filepath)) {
-			throw new Error(`Could not locate file referenced by property "${configPropertyName}" in ${configFilename} config file.\n Property "${configPropertyName}" filepath: ${filepath}\n Config file filepath: ${this.configPath}`)
+			throw new Error(`Could not locate file referenced by property "${configPropertyName}" in ${configFilename} config file.\n Referenced "${configPropertyName}" filepath: ${filepath}\n Config file filepath: ${this.configPath}`)
 		}
 
-		this.themeFilepaths[configPropertyName] = filepath
-		this.themeFileBuffers[configPropertyName] = Buffer.from('')
-		this.themeJSONData[configPropertyName] = {}
+		this.themeFilepaths[key] = filepath
+		this.themeFileBuffers[key] = Buffer.from('')
+		this.themeJSONData[key] = {}
 	}
 
 	async writeThemeJS () {
