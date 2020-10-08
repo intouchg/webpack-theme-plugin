@@ -20,7 +20,8 @@ class IntouchThemePlugin {
 		}
 
 		this.configPath = configPath
-		const config = validateConfig(require(this.configPath))
+		const configData = fs.readFileSync(this.configPath).toString('utf-8')
+		const config = validateConfig(JSON.parse(configData))
 
 		if (!config) {
 			throw new Error(`The ${configFilename} config file is invalid at filepath: ${this.configPath}`)

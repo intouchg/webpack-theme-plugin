@@ -10,9 +10,9 @@
     regenerator-runtime "^0.13.4"
 
 "@i/theme@latest":
-  version "0.0.15"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.15.tgz#12483e34e2ff22fc2dd203852ed3be69583627f0"
-  integrity sha1-Ekg+NOL/Ivwt0gOFLtO+aVg2J/A=
+  version "0.0.16"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.16.tgz#5b74aa6a60d4450b1729062eb57635e571af18e7"
+  integrity sha1-W3SqamDURQsXKQYutXY15XGvGOc=
   dependencies:
     "@babel/runtime" "7.11.2"
     "@i/utility" latest
