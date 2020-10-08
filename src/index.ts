@@ -35,7 +35,7 @@ class IntouchThemePlugin {
 		this.validateThemeFilepath('components')
 		this.validateThemeFilepath('variants')
 
-		this.outputPath = path.resolve('.', this.themeConfig.themeOutputPath)
+		this.outputPath = path.resolve('.', this.themeConfig.output)
 
 		this.writeThemeJS = this.writeThemeJS.bind(this)
 	}
