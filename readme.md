@@ -6,7 +6,7 @@ Webpack plugin to run the Intouch Design System theme processor [@i/theme](https
 
 ### Getting Started
 
-Initialize and pass the plugin to Webpack. The plugin will read the `.idsconfig` file in the project root.
+Initialize and pass the plugin to Webpack. The plugin will read the `.idsconfig.json` file in the project root.
 <br>
 
 ```js
@@ -18,13 +18,14 @@ webpackPlugins.push(new IntouchThemePlugin())
 ```
 <br>
 
-```shell
-# .idsconfig
-VALUES=theme/values.json
-GROUPS=theme/groups.json
-COMPONENTS=theme/components.json
-VARIANTS=theme/variants.json
-SNIPPETS=theme/snippets.json
-THEME_OUTPUT=theme/theme.js
+```jsonc
+// .idsconfig.json
+{
+    "values": "theme/values.json",
+    "groups": "theme/groups.json",
+    "components": "theme/components.json",
+    "variants": "theme/variants.json",
+    "output": "theme/theme.js"
+}
 ```
 <br>
