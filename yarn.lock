@@ -10,17 +10,17 @@
     regenerator-runtime "^0.13.4"
 
 "@i/theme@latest":
-  version "0.0.16"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.16.tgz#5b74aa6a60d4450b1729062eb57635e571af18e7"
-  integrity sha1-W3SqamDURQsXKQYutXY15XGvGOc=
+  version "0.0.20"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.20.tgz#30582b87eae6cfeed23974af51364dac6f12e4c9"
+  integrity sha1-MFgrh+rmz+7SOXSvUTZNrG8S5Mk=
   dependencies:
     "@babel/runtime" "7.11.2"
     "@i/utility" latest
 
 "@i/utility@latest":
-  version "0.0.8"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/utility/-/utility-0.0.8.tgz#491aec74846a199170411614b6f6656b10baaf59"
-  integrity sha1-SRrsdIRqGZFwQRYUtvZlaxC6r1k=
+  version "0.0.12"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/utility/-/utility-0.0.12.tgz#4ed49f7a895c50f680ade984b4843cee2ca4d0ee"
+  integrity sha1-TtSfeolcUPaAremEtIQ87iyk0O4=
   dependencies:
     "@babel/runtime" "7.11.2"
 
@@ -30,9 +30,9 @@
   integrity sha512-/+CRPXpBDpo2RK9C68N3b2cOvO0Cf5B9aPijHsoDQTHivnGSObdOF2BRQOYjojWTDy6nQvMjmqRXIxH55VjxxA==
 
 "@types/node@*":
-  version "14.11.5"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/node/-/node-14.11.5.tgz#fecad41c041cae7f2404ad4b2d0742fdb628b305"
-  integrity sha1-/srUHAQcrn8kBK1LLQdC/bYoswU=
+  version "14.11.10"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/node/-/node-14.11.10.tgz#8c102aba13bf5253f35146affbf8b26275069bef"
+  integrity sha1-jBAquhO/UlPzUUav+/iyYnUGm+8=
 
 "@types/source-list-map@*":
   version "0.1.2"
