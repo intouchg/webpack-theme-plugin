@@ -33,7 +33,6 @@ class IntouchThemePlugin {
 		this.themeJSONData = {}
 
 		this.validateThemeFilepath('values')
-		this.validateThemeFilepath('components')
 		this.validateThemeFilepath('variants')
 
 		this.outputPath = path.resolve('.', this.themeConfig.output)
