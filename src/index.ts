@@ -4,11 +4,21 @@ import { configFilename, validateConfig, themeProcessor } from '@i/theme'
 import type { Compiler } from 'webpack'
 import type { Config } from '@i/theme'
 
+const TYPE_DECLARATIONS = `
+type StyleTheme = typeof theme
+
+declare module 'styled-components' {
+	export interface DefaultTheme extends StyleTheme {}
+}
+
+`
+
 class IntouchThemePlugin {
 	configPath: string
 	themeConfig: Required<Config>
 	themeFilepaths: { [key: string]: string }
 	outputPath: string
+	isTypescript: boolean
 	themeFileBuffers: { [key: string]: Buffer }
 	themeJSONData: { [key: string]: any }
 
@@ -36,6 +46,7 @@ class IntouchThemePlugin {
 		this.validateThemeFilepath('variants')
 
 		this.outputPath = path.resolve('.', this.themeConfig.output)
+		this.isTypescript = path.extname(this.outputPath) === '.ts'
 
 		this.writeThemeJS = this.writeThemeJS.bind(this)
 	}
@@ -69,7 +80,7 @@ class IntouchThemePlugin {
 
 			fs.writeFileSync(
 				this.outputPath,
-				`export default ${JSON.stringify(theme, null, '\t')}`,
+				`const theme = ${JSON.stringify(theme, null, '\t')}\n\n${this.isTypescript ? TYPE_DECLARATIONS : ''}export default theme`,
 			)
 		}
 	}
