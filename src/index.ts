@@ -22,8 +22,8 @@ class IntouchThemePlugin {
 	themeFileBuffers: { [key: string]: Buffer }
 	themeJSONData: { [key: string]: any }
 
-	constructor () {
-		const configPath = path.resolve('.', configFilename)
+	constructor (configFilepath?: string) {
+		const configPath = configFilepath || path.resolve('.', configFilename)
 
 		if (!fs.existsSync(configPath)) {
 			throw new Error(`No ${configFilename} config file was found at filepath: ${configPath}`)
