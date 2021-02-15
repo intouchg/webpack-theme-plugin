@@ -10,17 +10,17 @@
     regenerator-runtime "^0.13.4"
 
 "@i/theme@latest":
-  version "0.0.43"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.43.tgz#012dea94005657b5e9907e863842c603078a5d48"
-  integrity sha1-AS3qlABWV7XpkH6GOELGAweKXUg=
+  version "0.0.46"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.46.tgz#e1d0ef25180d8ded055ed8b58687e3d759e24392"
+  integrity sha1-4dDvJRgNje0FXti1hofj11niQ5I=
   dependencies:
     "@babel/runtime" "7.12.5"
     "@i/utility" latest
 
 "@i/utility@latest":
-  version "0.0.17"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/utility/-/utility-0.0.17.tgz#cd6aa1b77340f9d398406d02437733dfd8ccf5e6"
-  integrity sha1-zWqht3NA+dOYQG0CQ3cz39jM9eY=
+  version "0.0.18"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/utility/-/utility-0.0.18.tgz#4ab6e2860b83ba4d0960f0c5c55902815f2f361c"
+  integrity sha1-SrbihguDuk0JYPDFxVkCgV8vNhw=
   dependencies:
     "@babel/runtime" "7.12.5"
 
@@ -30,9 +30,9 @@
   integrity sha1-M2utwb7sudrMOL6izzKt9ieoQho=
 
 "@types/node@*":
-  version "14.14.25"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/node/-/node-14.14.25.tgz#15967a7b577ff81383f9b888aa6705d43fbbae93"
-  integrity sha1-FZZ6e1d/+BOD+biIqmcF1D+7rpM=
+  version "14.14.28"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/node/-/node-14.14.28.tgz#cade4b64f8438f588951a6b35843ce536853f25b"
+  integrity sha1-yt5LZPhDj1iJUaazWEPOU2hT8ls=
 
 "@types/source-list-map@*":
   version "0.1.2"
@@ -45,9 +45,9 @@
   integrity sha1-qcpLcKGLJwzLK8Cqr+/R1Ia36nQ=
 
 "@types/uglify-js@*":
-  version "3.11.1"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/uglify-js/-/uglify-js-3.11.1.tgz#97ff30e61a0aa6876c270b5f538737e2d6ab8ceb"
-  integrity sha1-l/8w5hoKpodsJwtfU4c34tarjOs=
+  version "3.12.0"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/uglify-js/-/uglify-js-3.12.0.tgz#2bb061c269441620d46b946350c8f16d52ef37c5"
+  integrity sha1-K7BhwmlEFiDUa5RjUMjxbVLvN8U=
   dependencies:
     source-map "^0.6.1"
 
