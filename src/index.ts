@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { configFilename, validateConfig, themeProcessor } from '@i/theme'
+import { createUuid } from '@i/utility'
 import type { Compiler } from 'webpack'
 import type { Config } from '@i/theme'
 
@@ -68,10 +69,26 @@ class IntouchThemePlugin {
 
 		await Promise.all(Object.entries(this.themeFilepaths).map(async ([ key, filepath ]) => {
 			const fileDataBuffer = fs.readFileSync(filepath)
+
 			if (!fileDataBuffer.equals(this.themeFileBuffers[key])) {
 				this.themeFileBuffers[key] = fileDataBuffer
-				this.themeJSONData[key] = JSON.parse(fileDataBuffer.toString('utf-8'))
+				const jsonData = JSON.parse(fileDataBuffer.toString('utf-8'))
+				this.themeJSONData[key] = jsonData
 				didChange = true
+
+				const length = jsonData.length
+				let createdUuid = false
+				
+				for (let i = 0; i < length; i++) {
+					if (!jsonData[i].hasOwnProperty('id') || !jsonData[i].id) {
+						jsonData[i].id = createUuid()
+						createdUuid = true
+					}
+				}
+
+				if (createdUuid) {
+					fs.writeFileSync(filepath, JSON.stringify(jsonData, null, '\t'))
+				}
 			}
 		}))
 
