@@ -10,17 +10,17 @@
     regenerator-runtime "^0.13.4"
 
 "@i/theme@latest":
-  version "0.0.46"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.46.tgz#e1d0ef25180d8ded055ed8b58687e3d759e24392"
-  integrity sha1-4dDvJRgNje0FXti1hofj11niQ5I=
+  version "0.0.47"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.47.tgz#1f98e0de95a8eb655a508f647b82ddd445e64b28"
+  integrity sha1-H5jg3pWo62VaUI9ke4Ld1EXmSyg=
   dependencies:
     "@babel/runtime" "7.12.5"
     "@i/utility" latest
 
 "@i/utility@latest":
-  version "0.0.18"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/utility/-/utility-0.0.18.tgz#4ab6e2860b83ba4d0960f0c5c55902815f2f361c"
-  integrity sha1-SrbihguDuk0JYPDFxVkCgV8vNhw=
+  version "0.0.19"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/utility/-/utility-0.0.19.tgz#5857715c9c3f0a6f850e7e4b0b0d7f5390b73e8b"
+  integrity sha1-WFdxXJw/Cm+FDn5LCw1/U5C3Pos=
   dependencies:
     "@babel/runtime" "7.12.5"
 
