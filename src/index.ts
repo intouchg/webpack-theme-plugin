@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { configFilename, validateConfig, themeProcessor } from '@i/theme'
-import { createUuid } from 'createUuid'
+import { createUuid } from './createUuid'
 import type { Compiler } from 'webpack'
 import type { Config } from '@i/theme'
 
