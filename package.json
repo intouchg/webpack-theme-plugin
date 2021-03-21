@@ -1,6 +1,6 @@
 {
     "name": "@i/webpack-theme-plugin",
-    "version": "0.0.29",
+    "version": "0.0.30",
     "description": "Webpack plugin to run the Intouch Design System theme processor @i/theme",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -14,7 +14,8 @@
       "test": "echo tests are missing"
     },
     "dependencies": {
-      "@i/theme": "latest"
+      "@i/theme": "latest",
+      "chokidar": "3.5.1"
     },
     "devDependencies": {
       "@types/webpack": "4.41.26",

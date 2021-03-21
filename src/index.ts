@@ -1,4 +1,5 @@
 import fs from 'fs'
+import chokidar from 'chokidar'
 import path from 'path'
 import { configFilename, validateConfig, themeProcessor } from '@i/theme'
 import { createUuid } from './createUuid'
@@ -67,7 +68,7 @@ class IntouchThemePlugin {
 	async writeThemeJS () {
 		let didChange = false
 
-		await Promise.all(Object.entries(this.themeFilepaths).map(async ([ key, filepath ]) => {
+		await Promise.all(Object.entries(this.themeFilepaths).map(([ key, filepath ]) => new Promise((resolve) => {
 			const fileDataBuffer = fs.readFileSync(filepath)
 
 			if (!fileDataBuffer.equals(this.themeFileBuffers[key])) {
@@ -89,8 +90,13 @@ class IntouchThemePlugin {
 				if (createdUuid) {
 					fs.writeFileSync(filepath, JSON.stringify(jsonData, null, '\t'))
 				}
+
+				resolve(true)
 			}
-		}))
+			else {
+				resolve(true)
+			}
+		})))
 
 		if (didChange) {
 			const theme = themeProcessor(this.themeJSONData as any)
@@ -103,15 +109,9 @@ class IntouchThemePlugin {
 	}
 
 	watchThemeFiles () {
-		let changeTimeoutId: ReturnType<typeof setTimeout> | null = null
-
 		Object.values(this.themeFilepaths).forEach((filepath) => {
-			fs.watch(filepath, 'utf-8', () => {
-				if (changeTimeoutId) {
-					clearTimeout(changeTimeoutId)
-				}
-				changeTimeoutId = setTimeout(this.writeThemeJS, 1)
-			})
+			const watcher = chokidar.watch(filepath, { persistent: true })
+			watcher.on('change', this.writeThemeJS)
 		})
 	}
 
