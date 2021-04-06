@@ -10,9 +10,9 @@
     regenerator-runtime "^0.13.4"
 
 "@i/theme@latest":
-  version "0.0.56"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.56.tgz#f24f542c2034072700ec5bfa380f3f7162b8cad1"
-  integrity sha1-8k9ULCA0BycA7Fv6OA8/cWK4ytE=
+  version "0.0.57"
+  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.57.tgz#8c0387a33e17f071057f34833a9cd48a1439b790"
+  integrity sha1-jAOHoz4X8HEFfzSDOpzUihQ5t5A=
   dependencies:
     "@babel/runtime" "7.13.10"
     "@i/utility" latest
@@ -42,7 +42,7 @@
 "@types/tapable@*":
   version "2.2.2"
   resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/tapable/-/tapable-2.2.2.tgz#1d324b524190954a5700d86b6328bfc57e1fda48"
-  integrity sha512-ujqOVJEeLcwpDVJPnp/k3u1UXmTKq5urJq9fO8aUKg8Vlel5RNOFbVKEfqfh6wGfF/M+HiTJlBJMLC1aDfyf0Q==
+  integrity sha1-HTJLUkGQlUpXANhrYyi/xX4f2kg=
   dependencies:
     tapable "^2.2.0"
 
