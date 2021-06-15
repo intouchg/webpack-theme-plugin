@@ -88,7 +88,7 @@ class IntouchThemePlugin {
 				}
 
 				if (createdUuid) {
-					fs.writeFileSync(filepath, JSON.stringify(jsonData, null, '\t'))
+					fs.writeFileSync(filepath, JSON.stringify(jsonData, null, 2))
 				}
 
 				resolve(true)
@@ -103,7 +103,7 @@ class IntouchThemePlugin {
 
 			fs.writeFileSync(
 				this.outputPath,
-				`const theme = ${JSON.stringify(theme, null, '\t')}${this.isTypescript ? ' as const' : ''}\n\n${this.isTypescript ? TYPE_DECLARATIONS : ''}export default theme`,
+				`const theme = ${JSON.stringify(theme, null, 2)}${this.isTypescript ? ' as const' : ''}\n\n${this.isTypescript ? TYPE_DECLARATIONS : ''}export default theme`,
 			)
 		}
 	}
