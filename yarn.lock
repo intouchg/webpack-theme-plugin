@@ -4,59 +4,61 @@
 
 "@babel/runtime@7.13.10":
   version "7.13.10"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
-  integrity sha1-R9QqV7YJX0Ro2kQDiP262L6/DX0=
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
+  integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@i/theme@latest":
-  version "0.0.59"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/theme/-/theme-0.0.59.tgz#3ad99c2fc29be9fa4d4d6ac5f98a250e89d17ab5"
-  integrity sha1-OtmcL8Kb6fpNTWrF+YolDonRerU=
+"@intouchg/theme@latest":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@intouchg/theme/-/theme-0.1.0.tgz#de60d006cc17d02b7f2aa6af5f1b2e023740adda"
+  integrity sha512-FiYALHdeY7U0wMlcRvVeDgkGaITUx9YFJ1qT65PziVlBHp34fB8uQYh+Oz1hFkk5DFi4e0EA+kH1B55swo0iOA==
   dependencies:
     "@babel/runtime" "7.13.10"
-    "@i/utility" latest
+    "@intouchg/utility" latest
 
-"@i/utility@latest":
-  version "0.0.20"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@i/utility/-/utility-0.0.20.tgz#d0a99af69e3d5b762cfba5ec9184c18a4d08d958"
-  integrity sha1-0Kma9p49W3Ys+6XskYTBik0I2Vg=
+"@intouchg/utility@latest":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@intouchg/utility/-/utility-0.1.0.tgz#39d8d26e15ed5434358f45982c525f4ff0c7e643"
+  integrity sha512-/s9tpxo+yokNWYIHisw0294jBA6PhkG0No7DIccRqaUlOk37K9R7G0w3aRO7d03NiWIZJl3p7TR0Lu52c/IjNg==
   dependencies:
     "@babel/runtime" "7.13.10"
 
 "@types/anymatch@*":
-  version "1.3.1"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/anymatch/-/anymatch-1.3.1.tgz#336badc1beecb9dacc38bea2cf32adf627a8421a"
-  integrity sha1-M2utwb7sudrMOL6izzKt9ieoQho=
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@types/anymatch/-/anymatch-3.0.0.tgz#c95ff14401dbb2869913afac3935af4ad0d37f1a"
+  integrity sha512-qLChUo6yhpQ9k905NwL74GU7TxH+9UODwwQ6ICNI+O6EDMExqH/Cv9NsbmcZ7yC/rRXJ/AHCzfgjsFRY5fKjYw==
+  dependencies:
+    anymatch "*"
 
 "@types/node@*":
-  version "14.14.41"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/node/-/node-14.14.41.tgz#d0b939d94c1d7bd53d04824af45f1139b8c45615"
-  integrity sha1-0Lk52Uwde9U9BIJK9F8RObjEVhU=
+  version "16.10.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.10.2.tgz#5764ca9aa94470adb4e1185fe2e9f19458992b2e"
+  integrity sha512-zCclL4/rx+W5SQTzFs9wyvvyCwoK9QtBpratqz2IYJ3O8Umrn0m3nsTv0wQBk9sRGpvUe9CwPDrQFB10f1FIjQ==
 
 "@types/source-list-map@*":
   version "0.1.2"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/source-list-map/-/source-list-map-0.1.2.tgz#0078836063ffaf17412349bba364087e0ac02ec9"
-  integrity sha1-AHiDYGP/rxdBI0m7o2QIfgrALsk=
+  resolved "https://registry.yarnpkg.com/@types/source-list-map/-/source-list-map-0.1.2.tgz#0078836063ffaf17412349bba364087e0ac02ec9"
+  integrity sha512-K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA==
 
 "@types/tapable@*":
   version "2.2.2"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/tapable/-/tapable-2.2.2.tgz#1d324b524190954a5700d86b6328bfc57e1fda48"
-  integrity sha1-HTJLUkGQlUpXANhrYyi/xX4f2kg=
+  resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-2.2.2.tgz#1d324b524190954a5700d86b6328bfc57e1fda48"
+  integrity sha512-ujqOVJEeLcwpDVJPnp/k3u1UXmTKq5urJq9fO8aUKg8Vlel5RNOFbVKEfqfh6wGfF/M+HiTJlBJMLC1aDfyf0Q==
   dependencies:
     tapable "^2.2.0"
 
 "@types/uglify-js@*":
-  version "3.13.0"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/uglify-js/-/uglify-js-3.13.0.tgz#1cad8df1fb0b143c5aba08de5712ea9d1ff71124"
-  integrity sha1-HK2N8fsLFDxaugjeVxLqnR/3ESQ=
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/@types/uglify-js/-/uglify-js-3.13.1.tgz#5e889e9e81e94245c75b6450600e1c5ea2878aea"
+  integrity sha512-O3MmRAk6ZuAKa9CHgg0Pr0+lUOqoMLpc9AS4R8ano2auvsg7IE8syF3Xh/NPr26TWklxYcqoEEFdzLLs1fV9PQ==
   dependencies:
     source-map "^0.6.1"
 
 "@types/webpack-sources@*":
-  version "2.1.0"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/webpack-sources/-/webpack-sources-2.1.0.tgz#8882b0bd62d1e0ce62f183d0d01b72e6e82e8c10"
-  integrity sha1-iIKwvWLR4M5i8YPQ0Bty5ugujBA=
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@types/webpack-sources/-/webpack-sources-3.2.0.tgz#16d759ba096c289034b26553d2df1bf45248d38b"
+  integrity sha512-Ft7YH3lEVRQ6ls8k4Ff1oB4jN6oy/XmU6tQISKdhfh+1mR+viZFphS6WL0IrtDOzvefmJg5a0s7ZQoRXwqTEFg==
   dependencies:
     "@types/node" "*"
     "@types/source-list-map" "*"
@@ -64,8 +66,8 @@
 
 "@types/webpack@4.41.26":
   version "4.41.26"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/@types/webpack/-/webpack-4.41.26.tgz#27a30d7d531e16489f9c7607c747be6bc1a459ef"
-  integrity sha1-J6MNfVMeFkifnHYHx0e+a8GkWe8=
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.41.26.tgz#27a30d7d531e16489f9c7607c747be6bc1a459ef"
+  integrity sha512-7ZyTfxjCRwexh+EJFwRUM+CDB2XvgHl4vfuqf1ZKrgGvcS5BrNvPQqJh3tsZ0P6h6Aa1qClVHaJZszLPzpqHeA==
   dependencies:
     "@types/anymatch" "*"
     "@types/node" "*"
@@ -74,43 +76,43 @@
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
 
-anymatch@~3.1.1:
+anymatch@*, anymatch@~3.1.1:
   version "3.1.2"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/anymatch/-/anymatch-3.1.2.tgz#c0557c096af32f106198f4f4e2a383537e378716"
-  integrity sha1-wFV8CWrzLxBhmPT04qODU343hxY=
+  resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-3.1.2.tgz#c0557c096af32f106198f4f4e2a383537e378716"
+  integrity sha512-P43ePfOAIupkguHUycrc4qJ9kz8ZiuOUijaETwX7THt0Y/GNK7v0aa8rY816xWjZ7rJdA5XdMcpVFTKMq+RvWg==
   dependencies:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
 balanced-match@^1.0.0:
   version "1.0.2"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
-  integrity sha1-6D46fj8wCzTLnYf2FfoMvzV2kO4=
+  resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
+  integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
 binary-extensions@^2.0.0:
   version "2.2.0"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
-  integrity sha1-dfUC7q+f/eQvyYgpZFvk6na9ni0=
+  resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
+  integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
-  integrity sha1-PH/L9SnYcibz0vUrlm/1Jx60Qd0=
+  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
+  integrity sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
   dependencies:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
 braces@~3.0.2:
   version "3.0.2"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
-  integrity sha1-NFThpGLujVmeI23zNs2epPiv4Qc=
+  resolved "https://registry.yarnpkg.com/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
+  integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
   dependencies:
     fill-range "^7.0.1"
 
 chokidar@3.5.1:
   version "3.5.1"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/chokidar/-/chokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
-  integrity sha1-7pznu+vSt59J8wR5nVRo4x4U5oo=
+  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
+  integrity sha512-9+s+Od+W0VJJzawDma/gvBNQqkTiqYTWLuZoyAsivsI4AaWTCzHG06/TMjsf1cYe9Cb97UCEhjz7HvnPk2p/tw==
   dependencies:
     anymatch "~3.1.1"
     braces "~3.0.2"
@@ -124,37 +126,37 @@ chokidar@3.5.1:
 
 concat-map@0.0.1:
   version "0.0.1"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
+  resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
 fill-range@^7.0.1:
   version "7.0.1"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
-  integrity sha1-GRmmp8df44ssfHflGYU12prN2kA=
+  resolved "https://registry.yarnpkg.com/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
+  integrity sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
   dependencies:
     to-regex-range "^5.0.1"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
+  resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
 fsevents@~2.3.1:
   version "2.3.2"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
-  integrity sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
+  integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
 glob-parent@~5.1.0:
   version "5.1.2"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
-  integrity sha1-hpgyxYA0/mikCTwX3BXoNA2EAcQ=
+  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
+  integrity sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==
   dependencies:
     is-glob "^4.0.1"
 
 glob@^7.1.3:
-  version "7.1.6"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
-  integrity sha1-FB8zuBp8JJLhJVlDB0gMRmeSeKY=
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
+  integrity sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
@@ -165,7 +167,7 @@ glob@^7.1.3:
 
 inflight@^1.0.4:
   version "1.0.6"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
+  resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
   integrity sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=
   dependencies:
     once "^1.3.0"
@@ -173,109 +175,109 @@ inflight@^1.0.4:
 
 inherits@2:
   version "2.0.4"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
-  integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+  integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
 is-binary-path@~2.1.0:
   version "2.1.0"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/is-binary-path/-/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
-  integrity sha1-6h9/O4DwZCNug0cPhsCcJU+0Wwk=
+  resolved "https://registry.yarnpkg.com/is-binary-path/-/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
+  integrity sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==
   dependencies:
     binary-extensions "^2.0.0"
 
 is-extglob@^2.1.1:
   version "2.1.1"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/is-extglob/-/is-extglob-2.1.1.tgz#a88c02535791f02ed37c76a1b9ea9773c833f8c2"
+  resolved "https://registry.yarnpkg.com/is-extglob/-/is-extglob-2.1.1.tgz#a88c02535791f02ed37c76a1b9ea9773c833f8c2"
   integrity sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=
 
 is-glob@^4.0.1, is-glob@~4.0.1:
-  version "4.0.1"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/is-glob/-/is-glob-4.0.1.tgz#7567dbe9f2f5e2467bc77ab83c4a29482407a5dc"
-  integrity sha1-dWfb6fL14kZ7x3q4PEopSCQHpdw=
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/is-glob/-/is-glob-4.0.3.tgz#64f61e42cbbb2eec2071a9dac0b28ba1e65d5084"
+  integrity sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==
   dependencies:
     is-extglob "^2.1.1"
 
 is-number@^7.0.0:
   version "7.0.0"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
-  integrity sha1-dTU0W4lnNNX4DE0GxQlVUnoU8Ss=
+  resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
+  integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
 minimatch@^3.0.4:
   version "3.0.4"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
-  integrity sha1-UWbihkV/AzBgZL5Ul+jbsMPTIIM=
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
+  integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
   dependencies:
     brace-expansion "^1.1.7"
 
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
-  integrity sha1-Dc1p/yOhybEf0JeDFmRKA4ghamU=
+  resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
+  integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
 
 once@^1.3.0:
   version "1.4.0"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
+  resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
   integrity sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
   dependencies:
     wrappy "1"
 
 path-is-absolute@^1.0.0:
   version "1.0.1"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
+  resolved "https://registry.yarnpkg.com/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
   integrity sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
 
 picomatch@^2.0.4, picomatch@^2.2.1:
-  version "2.2.3"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/picomatch/-/picomatch-2.2.3.tgz#465547f359ccc206d3c48e46a1bcb89bf7ee619d"
-  integrity sha1-RlVH81nMwgbTxI5Goby4m/fuYZ0=
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
+  integrity sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
 
 readdirp@~3.5.0:
   version "3.5.0"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/readdirp/-/readdirp-3.5.0.tgz#9ba74c019b15d365278d2e91bb8c48d7b4d42c9e"
-  integrity sha1-m6dMAZsV02UnjS6Ru4xI17TULJ4=
+  resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-3.5.0.tgz#9ba74c019b15d365278d2e91bb8c48d7b4d42c9e"
+  integrity sha512-cMhu7c/8rdhkHXWsY+osBhfSy0JikwpHK/5+imo+LpeasTF8ouErHrlYkwT0++njiyuDvc7OFY5T3ukvZ8qmFQ==
   dependencies:
     picomatch "^2.2.1"
 
 regenerator-runtime@^0.13.4:
-  version "0.13.7"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
-  integrity sha1-ysLazIoepnX+qrrriugziYrkb1U=
+  version "0.13.9"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
+  integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
 
 rimraf@3.0.2:
   version "3.0.2"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/rimraf/-/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
-  integrity sha1-8aVAK6YiCtUswSgrrBrjqkn9Bho=
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
+  integrity sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==
   dependencies:
     glob "^7.1.3"
 
 source-map@^0.6.0, source-map@^0.6.1:
   version "0.6.1"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
-  integrity sha1-dHIq8y6WFOnCh6jQu95IteLxomM=
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+  integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
 source-map@^0.7.3:
   version "0.7.3"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
-  integrity sha1-UwL4FpAxc1ImVECS5kmB91F1A4M=
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
+  integrity sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
 
 tapable@^2.2.0:
-  version "2.2.0"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/tapable/-/tapable-2.2.0.tgz#5c373d281d9c672848213d0e037d1c4165ab426b"
-  integrity sha1-XDc9KB2cZyhIIT0OA30cQWWrQms=
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
+  integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
 
 to-regex-range@^5.0.1:
   version "5.0.1"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/to-regex-range/-/to-regex-range-5.0.1.tgz#1648c44aae7c8d988a326018ed72f5b4dd0392e4"
-  integrity sha1-FkjESq58jZiKMmAY7XL1tN0DkuQ=
+  resolved "https://registry.yarnpkg.com/to-regex-range/-/to-regex-range-5.0.1.tgz#1648c44aae7c8d988a326018ed72f5b4dd0392e4"
+  integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
 
 typescript@4.1.3:
   version "4.1.3"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/typescript/-/typescript-4.1.3.tgz#519d582bd94cba0cf8934c7d8e8467e473f53bb7"
-  integrity sha1-UZ1YK9lMugz4k0x9joRn5HP1O7c=
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.3.tgz#519d582bd94cba0cf8934c7d8e8467e473f53bb7"
+  integrity sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==
 
 wrappy@1:
   version "1.0.2"
-  resolved "https://intazdoweb.intouchsol.com/IntouchDesignSystem/_packaging/IntouchDesignSystem/npm/registry/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+  resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=

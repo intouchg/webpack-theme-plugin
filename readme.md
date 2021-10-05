@@ -1,6 +1,6 @@
-# @i/webpack-theme-plugin
+# @intouchg/webpack-theme-plugin
 
-Webpack plugin to run the Intouch Design System theme processor [@i/theme](https://intazdoweb.intouchsol.com/IntouchDesignSystem/IntouchDesignSystem/_git/theme)
+Webpack plugin to run the Intouch Design System theme processor [@intouchg/theme](https://npmjs.com/package/@intouchg/theme)
 
 
 
@@ -11,7 +11,7 @@ Initialize and pass the plugin to Webpack. The plugin will read the `.idsconfig.
 
 ```js
 // webpack.config.js
-const IntouchThemePlugin = require('@i/webpack-theme-plugin')
+const IntouchThemePlugin = require('@intouchg/webpack-theme-plugin')
 
 // ...
 webpackPlugins.push(new IntouchThemePlugin())

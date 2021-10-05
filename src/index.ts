@@ -1,10 +1,10 @@
 import fs from 'fs'
 import chokidar from 'chokidar'
 import path from 'path'
-import { configFilename, validateConfig, themeProcessor } from '@i/theme'
+import { configFilename, validateConfig, themeProcessor } from '@intouchg/theme'
 import { createUuid } from './createUuid'
 import type { Compiler } from 'webpack'
-import type { Config } from '@i/theme'
+import type { Config } from '@intouchg/theme'
 
 const TYPE_DECLARATIONS = `
 type StyleTheme = typeof theme
