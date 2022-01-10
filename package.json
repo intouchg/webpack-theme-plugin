@@ -1,10 +1,10 @@
 {
     "name": "@intouchg/webpack-theme-plugin",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Webpack plugin to run the Intouch Design System theme processor @intouchg/theme",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "repository": "https://intazdoweb.intouchsol.com/IntouchDesignSystem/IntouchDesignSystem/_git/webpack-theme-plugin",
+    "repository": "https://github.com/intouchg/webpack-theme-plugin",
     "author": "Intouch Group",
     "license": "MIT",
     "scripts": {
